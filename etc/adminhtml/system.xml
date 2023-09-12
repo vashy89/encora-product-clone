@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="encora" translate="label" sortOrder="999">
+			<label>encora</label>
+		</tab>
+		<section id="clone_simple_products" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>clone_simple_products</label>
+			<tab>encora</tab>
+			<resource>Encora_ProductClone::config_encora_productclone</resource>
+			<group id="options" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>options</label>
+				<field id="enable" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>enable</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
