@@ -78,12 +78,15 @@
 ## Exception Handling
 
 **Throws Error if not simple product(s)**
+
 ![not_simple_err.png](/readme-images/not_simple_err.png "not_simple_err.png")
 
 **Throws Error if simple product has parent(s)**
+
 ![if_parent.png](/readme-images/if_parent.png "if_parent.png")
 
 **Throws Error if already cloned product(s) retry to clone with same sku**
+
 ![known_err.png](/readme-images/known_err.png "known_err.png")
 
 
