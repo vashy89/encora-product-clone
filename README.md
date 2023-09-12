@@ -46,11 +46,11 @@
 ## Console Command
 `php bin/magento encora:product:clone` 
 
-## Preview Clone With single SKU 
+## Preview Clone With single SKU, using argument by append sku id
 
 ![with_sku.png](/readme-images/with_sku.png "with_sku.png")
 
-## Preview Clone with Lot and Batch wise
+## Preview Clone with Lot and Batch wise, using options with --lot and --batch or simply with --lot
 
 ![batch_wise.png](/readme-images/batch_wise.png "batch_wise.png")
 
