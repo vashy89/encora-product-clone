@@ -37,6 +37,7 @@
  - Enable the module by running `php bin/magento module:enable Encora_ProductClone`
  - Apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
+ - Occasionally require `php bin/magento indexer:reindex`
 
 ## Attributes
 
@@ -71,10 +72,13 @@
 
 ## Module Admin Configuration Settings
 
-**Go to : Admin->store->configuration->pwd->product_inquiry_form->options->enable**
+**Go to : Admin->store->configuration->encora->clone_simple_products->options->enable**
 
 
-## Known issues
+## Exception Handling
+
+**Throws Error if not simple product(s)**
+![not_simple_err.png](/readme-images/not_simple_err.png "not_simple_err.png")
 
 **Throws Error if simple product has parent(s)**
 ![if_parent.png](/readme-images/if_parent.png "if_parent.png")
@@ -82,11 +86,11 @@
 **Throws Error if already cloned product(s) retry to clone with same sku**
 ![known_err.png](/readme-images/known_err.png "known_err.png")
 
-**Throws Error if not simple product(s)**
-![not_simple_err.png](/readme-images/not_simple_err.png "not_simple_err.png")
 
 
 ## Developer Information
 - Vashishtha Chauhan
+- Engineering Team Lead 
 - Email `vashishtha.prime@gmail.com`
 - Mobile `+91 9898121095`
+- Linkein `www.linkedin.com/in/vashishtha-chauhan`
